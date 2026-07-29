@@ -1,7 +1,26 @@
 aid: jopwell
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jopwell.png
 name: Jopwell
-description: Jopwell is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Jopwell was a career advancement and diversity-recruiting platform that connected Black, Latinx, and
+  Native American students and professionals with employers for jobs, internships, and career resources.
+  Founded in 2015 and backed by Andreessen Horowitz (a16z) and other investors, it was surfaced as an a16z
+  portfolio company and added to the API Evangelist network as a stub. As of an enrichment probe on
+  2026-07-19, the jopwell.com domain returns an HTTP 301 redirect to trueplatform.com (True, an executive
+  search and talent-management firm), indicating the standalone Jopwell product is no longer operating. No
+  public developer program, API, OpenAPI specification, documentation, or /.well-known/security.txt surface
+  was found, so no API artifacts could be produced.
 url: https://raw.githubusercontent.com/api-evangelist/jopwell/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +28,27 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-domain-status: redirected
+x-domain-status-detail: 'jopwell.com HTTP 301 -> trueplatform.com (probed 2026-07-19); no developer/API surface found'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Careers
+- Recruiting
+- Diversity
+- Talent
+- Hiring
+- Jobs
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
